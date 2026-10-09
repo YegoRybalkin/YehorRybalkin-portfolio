@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6fb;
+  color: #222;
+}
+
+nav {
+  background-color: #1f2a44;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile_name {
+  float: left;
+  padding: 10px;
+  color: #e0f2ff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.menu {
+  float: right;
+}
+
+.topmenu {
+  color: #c9d3e6;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.topmenu:hover {
+  color: white;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.section {
+  padding: 40px 8%;
+  scroll-margin-top: 70px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #1f2a44;
+  margin-top: 0;
+}
+
+.about_me {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.profile_img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #1f2a44;
+  flex-shrink: 0;
+}
+
+.about_text h1 {
+  color: #1f2a44;
+  margin-top: 0;
+}
+
+.about_text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.all_skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+.skill {
+  background: white;
+  width: 125px;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.skill img {
+  width: 70px;
+  height: 70px;
+}
+
+.skill h6 {
+  font-size: 18px;
+  margin: 12px 0 0;
+}
+
+.all_projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  border-left: 8px solid #3b82f6;
+  border-radius: 10px;
+  padding: 20px 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h4 {
+  font-size: 22px;
+  margin: 0 0 8px;
+  color: #1f2a44;
+}
+
+.project-card p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.all_recommendations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.recommendation {
+  background: #1f2a44;
+  color: white;
+  width: 300px;
+  padding: 25px;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.recommendation span {
+  font-size: 30px;
+  color: #7cc4ff;
+  font-weight: bold;
+  line-height: 0;          
+  vertical-align: -0.25em;
+}
+
+.leave_recommendation {
+  max-width: 600px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.leave_recommendation h3 {
+  text-align: center;
+  color: #1f2a44;
+}
+
+.leave_recommendation input,
+.leave_recommendation textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #c3cbd9;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+#recommend_btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#recommend_btn:hover {
+  background: #2563eb;
+}
+
+.iconbutton {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.iconbutton a {
+  background: #1f2a44;
+  border-radius: 50%;
+  display: inline-flex;
+  padding: 4px;
+}
+
+#popup {
+  visibility: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  max-width: 90%;
+}
+
+#popup h3 {
+  color: #1f2a44;
+  margin-top: 0;
+}
+
+#popup button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
